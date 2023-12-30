@@ -40,11 +40,21 @@
         box-shadow: 0.375rem 0.375rem 0 0 hsl(0, 0%, 7%);
         border: solid 0.0625rem hsl(0, 0%, 7%);
         max-width: 22rem;
+        transition: box-shadow 0.25s ease-in-out;
+      }
+      
+      .box:hover {
+        box-shadow: .625rem .625rem 0 0 hsl(0, 0%, 7%);
+      }
+      
+      .box:hover h1 {
+        color: hsl(47, 88%, 63%);
       }
       
       main {
         padding: 1.5rem;
         border-radius: 1.25rem;
+        cursor: pointer;
       }
       
       footer {
@@ -96,11 +106,7 @@
 
       h1 {
         font-size: 1.25rem;
-        cursor: pointer;
-      }
-
-      h1:hover {
-        color: hsl(47, 88%, 63%);
+        transition: color 0.5s ease-in-out;
       }
 
       .publish_date {
