@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Blog preview card</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: 'Figtree', sans-serif;
+        margin: 0;
+      }
+      .container {
+        background-color: hsl(47, 88%, 63%);
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+      }
+      
+      .box {
+        background-color: hsl(0, 0%, 100%);
+        place-self: center;
+        width: calc(100% - 2.5rem);
+        box-sizing: border-box;
+        box-shadow: 0.375rem 0.375rem 0 0 hsl(0, 0%, 7%);
+        border: solid 0.0625rem hsl(0, 0%, 7%);
+        max-width: 22rem;
+      }
+      
+      main {
+        padding: 1.5rem;
+        border-radius: 1.25rem;
+      }
+      
+      footer {
+        margin-bottom: 1rem;
+        font-size: .75rem;
+        padding: .375rem;
+        border-radius: .5rem;
+        text-align: center;
+      }
+
+      footer a {
+        color: hsl(228, 45%, 44%);
+        font-weight: 800;
+      }
+
+      img {
+        width: 100%;
+      }
+      
+      .illustration {
+        border-radius: 0.75rem;
+        margin-bottom: 1.25rem;
+      }
+      
+      .category {
+        display: block;
+        width: fit-content;
+        background-color: hsl(47, 88%, 63%);
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.75rem;
+        font-weight: 800;
+        margin-bottom: .75rem;
+        font-size: .75rem;
+      }
+      
+      .user {
+        display: grid;
+        grid-template-columns: 2rem 1fr;
+        place-items: center left;
+        gap: .75rem;
+      }
+
+      p {
+        color: hsl(0, 0%, 50%);
+        font-size: .9rem;
+        margin-bottom: 1.75rem;
+        line-height: 1.25rem;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+        cursor: pointer;
+      }
+
+      h1:hover {
+        color: hsl(47, 88%, 63%);
+      }
+
+      .publish_date {
+        font-size: .75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main class="box">
+        <img class="illustration" src="./assets/images/illustration-article.svg" alt="" />
+        <span class="category">Learning</span>
+        <span class="publish_date">Published 21 Dec 2023</span>
+        <h1>HTML & CSS foundations</h1>
+        <p>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <div class="user">
+          <img src="./assets/images/image-avatar.webp" alt="" />
+          <strong>Greg Hooper</strong>
+        </div>
+      </main>
+
+      <footer class="box">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/elioflo" target="_blank">Elio Flores</a>.
+      </footer>
+    </div>
+  </body>
+</html>
